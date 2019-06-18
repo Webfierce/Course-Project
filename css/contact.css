@@ -1,0 +1,118 @@
+body {
+  background-image: url("img/landing.jpg");
+  background-size: cover;
+}
+
+.contact {
+  overflow: hidden;
+  position: absolute;
+  width: 99%;
+  height: 98%;
+  display: flex;
+  justify-content: center; /*centers items on the line (the x-axis by default)*/
+  align-items: center; /*centers items on the cross-axis (y by default)*/
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.facebook {
+  background: #333;
+  margin: 2em;
+  width: 20em;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.github {
+  background: #333;
+  margin: 2em;
+  width: 20em;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.instagram {
+  background: #333;
+  margin: 2em;
+  width: 20em;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.tag {
+  background-color: rgba(0,0,0, .2);
+  padding: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+  border-bottom: 2px solid #FFFF00;
+  -webkit-animation: tBorder 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: tBorder 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes tBorder {
+  50% {border-bottom-color: #FFA500;}
+}
+
+@keyframes tBorder {
+  50% {border-bottom-color: #FFA500;}
+}
+
+.fIcon {
+  width: 100%;
+  height: 100%;
+  font-size: 150px;
+  padding-top: 10px;
+  left: 50%;
+  top: 0;
+  color: #fff;
+  background: #297DEA;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+
+.gIcon {
+  width: 100%;
+  height: 100%;
+  font-size: 150px;
+  padding-top: 10px;
+  left: 50%;
+  top: 0;
+  color: #fff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+
+.iIcon {
+  width: 100%;
+  height: 100%;
+  font-size: 150px;
+  padding-top: 10px;
+  left: 50%;
+  top: 0;
+  color: #fff;
+  background: linear-gradient( #400080, transparent),linear-gradient(200deg, #d047d1, #ff0000,   #ffff00);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.tag:hover {
+  border: 2px solid #FFFF00;
+  -webkit-animation: tag 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: tag 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes tag {
+  50% {border-color: #FFA500;}
+}
+
+@keyframes tag {
+  50% {border-color: #FFA500;}
+}

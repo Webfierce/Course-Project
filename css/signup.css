@@ -1,0 +1,201 @@
+body {
+  background: url("img/register.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  margin: auto;
+  padding: 0 0px 0px 0px;
+  top: auto;
+  left: auto;
+  width: 50%;
+  text-align: center;
+  margin-top: 100px;
+  background-color: rgba(128,128,128,.8);
+  border-radius: 8px;
+}
+
+.signHeader {
+  background-color: rgba(0,0,0,.8);
+  padding: 10px;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid #FFFF00;
+  -webkit-animation: signHeader 3s infinite; /* Safari 4.0 - 8.0 */
+  animation: signHeader 3s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes signHeader {
+  50% {border-color: #FFA500;}
+}
+
+@keyframes signHeader {
+  50% {border-color: #FFA500;}
+}
+
+.signFooter {
+  background-color: rgba(0,0,0,.8);
+  padding: 1px;
+  color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid #FFFF00;
+  -webkit-animation: signFooter 3s infinite; /* Safari 4.0 - 8.0 */
+  animation: signFooter 3s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes signFooter {
+  50% {border-color: #FFA500;}
+}
+
+@keyframes signFooter {
+  50% {border-color: #FFA500;}
+}
+
+#custom-button {
+  padding: 6px;
+  font-size: 12px;
+  color: white;
+  background-color: #000;
+  border-radius: 5px;
+  border: 2px solid red;
+  outline-style: none;
+}
+
+form {
+  width: 320px;
+  margin: auto;
+}
+
+form > div {
+  position: relative;
+  overflow: hidden;
+}
+
+form input {
+  width: 91.7%;
+  border: 2px solid #333;
+  background: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 1px 12px;
+  outline: 0;
+}
+
+form input:valid {
+  background: #fff;
+}
+
+form input:focus {
+  border-color: #000;
+}
+
+form input:focus + label {
+  background: #000;
+  color: white;
+  font-size: 70%;
+  padding: 4px 6px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+form label {
+  transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+  position: absolute;
+  color: #000;
+  padding: 7px 6px;
+}
+
+form.signup-form input {
+  padding: 12px 12px 12px 12px;
+}
+
+form.signup-form label {
+  top: 0;
+  bottom: 0;
+  left: 7px;
+  width: 295px;
+}
+
+form.signup-form input:focus {
+  padding: 4px 6px 20px 6px;
+}
+
+form.signup-form input:focus + label {
+  top: 100%;
+  margin-top: -16px;
+}
+
+#custom-button:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gender {
+  position: absolute;
+  font-weight: bold;
+}
+
+#custom-text {
+  margin-left: 10px;
+  color: #333;
+}
+
+.registerBtn {
+  padding: 8px;
+  font-size: 16px;
+  width: 150px;
+  color: white;
+  background-color: #000;
+  border-radius: 5px;
+  border: 2px solid #FFFF00;
+  outline-style: none;
+  -webkit-animation: registerBtn 2s infinite; /* Safari 4.0 - 8.0 */
+  animation: registerBtn 2s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes registerBtn {
+  50% {border-color: #FFA500;}
+}
+
+@keyframes registerBtn {
+  50% {border-color: #FFA500;}
+}
+
+.registerBtn:hover {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.errorBox .errorMsg{
+    border: 2px solid #CC1F1A;
+    color: #CC1F1A;
+    letter-spacing: normal;
+    font-size: 16px;
+    padding: 10px;
+}
+.errorBox .successMsg{
+    border: 2px solid #1F9D55;
+    color: #1F9D55;
+    letter-spacing: normal;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes errormsg {
+  50% {border-color: #FF0000;}
+}
+
+@keyframes errormsg {
+  50% {border-color: #FF0000;}
+}errormsg

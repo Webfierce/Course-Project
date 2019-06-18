@@ -1,0 +1,146 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: #8e9eab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00f0, #000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00f0, #000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-bottom: 1px solid orange;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+  z-index: 3;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  50% {border-bottom-color: yellow;}
+}
+
+@keyframes mymove {
+  50% {border-bottom-color: yellow;}
+}
+
+.logo {
+  position: fixed;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  top: -5px;
+  left: 50px;
+  z-index: 4;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0 10px;
+  display: flex;
+}
+
+header nav ul li {
+  margin-top: 30px;
+  list-style: none;
+  position: relative;
+}
+
+header nav ul li.sub-menu:before {
+  content: '\f078';
+  font-family: fontAwesome;
+  position: absolute;
+  line-height: 50px;
+  color: #fff;
+  right: 1px;
+}
+
+header nav ul li.active.sub-menu:before {
+  content: '\f077';
+}
+
+header nav ul li ul {
+  position: absolute;
+  left: 0;
+  background: #333;
+  display: none;
+}
+
+header nav ul li.active ul {
+  display: block;
+  background-color: orange;
+}
+
+header nav ul li ul li {
+  display: block;
+  width: 200px;
+  border-top: 1px solid #FFFF00;
+  -webkit-animation: mymove1 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove1 5s infinite;
+ }
+
+ /* Safari 4.0 - 8.0 */
+ @-webkit-keyframes mymove1 {
+  50% {border-top-color: #FFA500;}
+ }
+
+ @keyframes mymove1 {
+  50% {border-top-color: #FFA500;}
+ }
+
+
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+
+header nav ul li a.active {
+  background: orange;
+}
+
+.menu-toggle {
+  color: #fff;
+  float: left;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+header ul li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 40px;
+  left: 0;
+  background: orange;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .4s linear;
+}
+header ul li > a:hover:before,
+header ul li > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
